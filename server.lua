@@ -9,13 +9,11 @@ RegisterCommand('setped', function(source, args, rawCommand)
             local model = args[2]
 
             TriggerClientEvent('sharky_setped:changePed', targetPlayer, model)
-            TriggerClientEvent('chat:addMessage', source,
-                { args = { '^1SYSTEM', 'Ped changed for player ' .. targetPlayer } })
-                TriggerClientEvent('ox_lib:notify', source,{
-                    title = 'SETPED',
-                    type = 'success',
-                    text = 'Megváltoztattad a PED-jét neki: ' .. targetPlayer
-                })
+            TriggerClientEvent('ox_lib:notify', source, {
+                title = 'SETPED',
+                type = 'success',
+                text = 'Megváltoztattad a PED-jét neki: ' .. targetPlayer
+            })
         else
             TriggerClientEvent('chat:addMessage', source,
                 { args = { '^1SETPED', 'Használata: /setped [playerId] [pedModel]' } })
