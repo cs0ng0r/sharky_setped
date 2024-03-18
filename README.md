@@ -1,4 +1,4 @@
-# Sharky Setped
+# Sharky Setped (NEM TESZTELT)
 
 ## Telepítés
 
